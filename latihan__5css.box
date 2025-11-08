@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Implementasi CSS Box dan Positioning</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 40px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      width: 200px;
+      height: 250px;
+      border: 2px solid #333333ff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .box:hover {
+      transform: scale(2.05);
+    }
+
+    .box img {
+      width: 60%;
+      height: 70%;
+      object-fit: cover;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Implementasi CSS Box dan Positioning dengan Gambar</h2>
+
+  <div class="container">
+    <div class="box"><img src="https://share.google/images/5Xd9xYXhJADmZX7cr" alt="Burung 2"></div>
+    <div class="box"><img src="https://share.google/images/sznH7GUu3z5LNr5Ru" alt="Burung 3"></div>
+    <div class="box"><img src="https://share.google/images/oOLjVhG7ZdvF40twf" alt="Burung 4"></div>
+    <div class="box"><img src="https://share.google/images/VnyLgxDD1l6mSclQO" alt="Burung 4"></div>
+  </div>
+
+</body>
+</html>
